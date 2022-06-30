@@ -87,6 +87,12 @@ nav ul li.nav-item a.nav-link{
     padding: 80px 0;
     height: 78vh;
 }
+.social-icon .fa-twitter:hover{
+    color: #08a0e9;
+}
+.social-icon .fa-linkedin-in:hover{
+    color: #0077b5;
+}
 .about{
     padding: 83px 0 57px 0;
     background-color: #dcdcdc!important;
@@ -124,9 +130,6 @@ nav ul li.nav-item a.nav-link{
 .team-details{
     max-width: 79%;
     margin: 0 auto;
-}
-.social-icon a:hover i{
-    color: #646464;
 }
 .social-icon a i{
     color: #969696;
@@ -322,7 +325,7 @@ body.overflow::before{
         margin-bottom: 40px;
     }
     .about-detail h1{
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         line-height: 1.4em;
         letter-spacing: 0px;
         font-size: 26px;
