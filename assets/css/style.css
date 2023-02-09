@@ -114,7 +114,7 @@ nav ul li.nav-item a.nav-link{
     height: fit-content;
 }
 .team{
-    padding: 81px 0;
+    padding: 0 0 81px;
     background-image:linear-gradient(180deg,#dcdcdc 0%,#ffffff 100%);   
 }
 .team .team-details p{
@@ -304,6 +304,9 @@ body.overflow::before{
 .team__inner .row{
     justify-content: center;
 }   
+.team__inner .row > .col-lg-4 {
+    margin-top: 80px;
+}
 @media only screen and (max-width: 1180px){
     .container{
         max-width: 90% !important;
@@ -376,6 +379,9 @@ body.overflow::before{
         background-size: cover;
         padding: 80px 0;
         height: 78vh;
+    }
+    .team__inner .row > .col-lg-4 {
+        margin-top: 30px;
     }
 }
 @media only screen and (max-width: 600px){
