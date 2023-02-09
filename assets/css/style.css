@@ -115,6 +115,7 @@ nav ul li.nav-item a.nav-link{
 }
 .team{
     padding: 0 0 81px;
+    margin-top: -50px;
     background-image:linear-gradient(180deg,#dcdcdc 0%,#ffffff 100%);   
 }
 .team .team-details p{
@@ -305,12 +306,15 @@ body.overflow::before{
     justify-content: center;
 }   
 .team__inner .row > .col-lg-4 {
-    margin-top: 80px;
+    margin-top: 130px;
 }
 @media only screen and (max-width: 1180px){
     .container{
         max-width: 90% !important;
         padding: 0 !important;
+    }
+    .team {
+        margin-top: -100px;
     }
 }
 @media only screen and (max-width: 991px){
@@ -318,6 +322,9 @@ body.overflow::before{
         width: 70%;
         margin: 40px auto 0;
         max-width: 390px;
+    }
+    .team__inner .row > .col-lg-4 {
+        margin-top: 60px;
     }
 }
 @media only screen and (max-width: 768px){
@@ -382,6 +389,9 @@ body.overflow::before{
     }
     .team__inner .row > .col-lg-4 {
         margin-top: 30px;
+    }
+    .team {
+        margin-top: 0;
     }
 }
 @media only screen and (max-width: 600px){
