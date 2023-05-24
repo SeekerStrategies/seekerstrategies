@@ -164,9 +164,12 @@ nav ul li.nav-item a.nav-link{
 .team .team-details{
     transition: transform 300ms ease 0ms !important;
 }
-.service, .contact{
+.service{
     padding:55px 0;
     background-color: #002b00;
+}
+.contact{
+    padding:55px 0;
 }
 .service h2{
     font-size: 32px;
@@ -201,22 +204,22 @@ nav ul li.nav-item a.nav-link{
     padding: 10px;
 }
 .contact h3{
-    color:#dcdcdc;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 1.8em;
+    font-size: 22px;
+    line-height: 30px;
+    color: #333;
     max-width: 72%;
     margin: 0 auto;
     padding-bottom: 30px;
     font-style: italic;
 }
-.contact p{
-    color:#dcdcdc;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7em;
+.contact p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
     max-width: 72%;
     margin: 0 auto;
+    color: #212529;
 }
 .contact{
     padding-bottom: 55px;
@@ -308,6 +311,40 @@ body.overflow::before{
 .team__inner .row > .col-lg-4 {
     margin-top: 130px;
 }
+#partners {
+    padding: 70px 0 0;
+}
+.partners-heading p {
+    font-size: 18px;
+}
+.partners-logos ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.partners-logos ul li {
+    width: 25%;
+    padding: 20px 55px;
+}
+.partners-logos {
+    padding: 20px 0;
+}
+.partners-logos ul li img {
+    display: block;
+    filter: grayscale(1);
+    transition: all 0.3s ease-in-out;
+    margin: 0 auto;
+}
+.partners-logos ul li:hover img, .hub-logo img:hover {
+    filter: grayscale(0);
+}
+.partners-logos ul li:hover {
+    cursor: pointer;
+}
+.hub-logo img {
+    max-width: 120px;
+    filter: grayscale(1);
+}
 @media only screen and (max-width: 1180px){
     .container{
         max-width: 90% !important;
@@ -315,6 +352,9 @@ body.overflow::before{
     }
     .team {
         margin-top: -100px;
+    }
+    .partners-logos ul li {
+        padding: 20px 40px;
     }
 }
 @media only screen and (max-width: 991px){
@@ -325,6 +365,9 @@ body.overflow::before{
     }
     .team__inner .row > .col-lg-4 {
         margin-top: 60px;
+    }
+    .partners-logos ul li {
+        padding: 20px 25px;
     }
 }
 @media only screen and (max-width: 768px){
@@ -393,6 +436,14 @@ body.overflow::before{
     .team {
         margin-top: 0;
     }
+    .partners-logos ul {
+        max-width: 600px;
+        margin: 0 auto !important;
+    }
+    .partners-logos ul li {
+        padding: 20px 70px;
+        width: 50%;
+    }
 }
 @media only screen and (max-width: 600px){
     .about-detail h1{
@@ -401,5 +452,8 @@ body.overflow::before{
     }
     .team {
         padding:10px 0;
+    }
+    .partners-logos ul li {
+        padding: 20px 40px;
     }
 }
