@@ -3,8 +3,10 @@ $(window).scroll(function() {
     var banner = $('.banner').height();
     if (scroll > banner) {
         $("header").addClass("sticky_header");
+        $('#btn-back-to-top').fadeIn();
     } else {
         $("header").removeClass("sticky_header");
+        $('#btn-back-to-top').fadeOut();
     }
 });
 jQuery(document).ready(function() {
@@ -18,4 +20,10 @@ jQuery(document).ready(function() {
         $("#collapsibleNavbar").removeClass("show");
         $("#collapsibleNavbar").slideUp();
     });
+});
+$('#btn-back-to-top').click(function () {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 400);
+    return false;
 });
