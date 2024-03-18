@@ -211,16 +211,13 @@ nav ul li.nav-item a.nav-link{
     padding-bottom: 30px;
     font-style: italic; 
 }
-.contact p, .contact__content a {
+.contact p {
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
     max-width: 72%;
     margin: 0 auto;
     color: #212529;
-}
-.contact__content a:hover{
-    color: #002b00;
 }
 .contact{
     padding-bottom: 55px;
@@ -351,6 +348,17 @@ body.overflow::before{
     border: medium none;
     color: #00a35c;
     box-shadow: inherit;
+}
+.contact__content a {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 72%;
+    margin: 0 auto;
+    color: #212529 !important;
+}
+.contact__content a:hover{
+    color: #002b00 !important;
 }
 @media only screen and (max-width: 1180px){
     .container{
