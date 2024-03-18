@@ -209,7 +209,7 @@ nav ul li.nav-item a.nav-link{
     max-width: 72%;
     margin: 0 auto;
     padding-bottom: 30px;
-    font-style: italic;
+    font-style: italic; 
 }
 .contact p, .contact__content a {
     font-weight: normal;
