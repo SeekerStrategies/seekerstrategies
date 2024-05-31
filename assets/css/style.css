@@ -315,14 +315,17 @@ body.overflow::before{
 .partners-heading p {
     font-size: 18px;
 }
-.partners-logos ul {
+/* .partners-logos ul {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+} */
+.logo__slider .slick-track {
+    display: flex;
+    align-items: center;
 }
 .partners-logos ul li {
-    width: 25%;
-    padding: 20px 55px;
+    padding: 0px 55px;
 }
 .partners-logos {
     padding: 20px 0;
@@ -369,7 +372,7 @@ body.overflow::before{
         margin-top: -100px;
     }
     .partners-logos ul li {
-        padding: 20px 40px;
+        padding: 0px 45px;
     }
 }
 @media only screen and (max-width: 991px){
@@ -380,9 +383,6 @@ body.overflow::before{
     }
     .team__inner .row > .col-lg-4 {
         margin-top: 60px;
-    }
-    .partners-logos ul li {
-        padding: 20px 25px;
     }
 }
 @media only screen and (max-width: 768px){
@@ -451,14 +451,6 @@ body.overflow::before{
     .team {
         margin-top: 0;
     }
-    .partners-logos ul {
-        max-width: 600px;
-        margin: 0 auto !important;
-    }
-    .partners-logos ul li {
-        padding: 20px 70px;
-        width: 50%;
-    }
 }
 @media only screen and (max-width: 600px){
     .about-detail h1{
@@ -469,6 +461,6 @@ body.overflow::before{
         padding:10px 0;
     }
     .partners-logos ul li {
-        padding: 20px 40px;
+        padding: 0px 30px;
     }
 }

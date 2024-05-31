@@ -35,8 +35,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Petrona:wght@200;300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
-
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300;400;500;600;700&family=Petrona:wght@200;300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <header>
@@ -176,27 +179,35 @@
           </div>
       </section>
       <section class="partners" id="partners">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="partners-heading text-center">
                     <h2>Our Partners</h2>
                     <p>A select group of purpose-driven organizations we engage with.</p>
                 </div>
                 <div class="partners-logos">
-                    <ul>
-                        <li><img src="assets/images/edflogo_ss.png" alt=""></li>
-                        <li><img src="assets/images/bchplogo_ss.png" alt=""></li>
-                        <li><img src="assets/images/txaft_logo_ss.png" alt=""></li>
-                        <li><img src="assets/images/rsflogo_ss.png" alt=""></li>
-                        <li><img src="assets/images/eflogo_ss.png" alt=""></li>
-                        <li><img src="assets/images/txaflcio_ss.png" alt=""></li>
-                        <li><img src="assets/images/goodblendlogo_ss.png" alt=""></li>
-                        <li><img src="assets/images/TFPlogo_ss.png" alt=""></li>
+                    <ul class="logo__slider">
+                        <li><img src="assets/images/edflogo_ss.png" alt="Environmental Defense Fund"></li>
+                        <li><img src="assets/images/bchplogo_ss.png" alt="Baylor University"></li>
+                        <li><img width="120" src="assets/images/txaft_logo_ss.png" alt="American Federation of Teachers"></li>
+                        <li><img src="assets/images/rsflogo_ss.png" alt="Run for Something"></li>
+                        <li><img src="assets/images/eflogo_ss.png" alt="Energy Foundation"></li>
+                        <li><img src="assets/images/txaflcio_ss.png" alt="Texas AFL-CIO"></li>
+                        <li><img src="assets/images/goodblendlogo_ss.png" alt="Good blend"></li>
+                        <li><img src="assets/images/TFPlogo_ss.png" alt="Texas Future Project"></li>
 
-                        <li><img src="assets/images/catf-logo.png" alt=""></li>
-                        <li><img src="assets/images/ilrc_logo.png" alt=""></li>
-                        <li><img src="assets/images/odplogo.png" alt=""></li>
-                        <li><img src="assets/images/TxETRA-logo.png" alt=""></li>
+                        <li><img src="assets/images/catf-logo.png" alt="Clean Air Task Force"></li>
+                        <li><img width="90" src="assets/images/ilrc_logo.png" alt="Immigrant Legal Resource Center (ILRC)"></li>
+                        <li><img src="assets/images/odplogo.png" alt="Open Democracy PAC"></li>
+                        <li><img width="120" src="assets/images/TxETRA-logo.png" alt="Texas Electric Transportation Resources Alliance (TxETRA)"></li>
+                        <li><img src="assets/images/bedrock-energy-logo.webp" alt="Bedrock Energy"></li>
+                        <li><img src="assets/images/climatepowerlogo.png" alt="Climate Power"></li>
+                        <li><img src="assets/images/New+Houston+Logo.jpg" alt="New Houston"></li>
+                        <li><img src="assets/images/TCJP-Horizontal-FullColor.png" alt="Texas Climate Jobs Project"></li>
+                        <li><img width="140" src="assets/images/Texas-Immigration-Law-Logo_Full-Color.png" alt="Texas Immigration Law"></li>
+                        <li><img width="100" src="assets/images/tsmflogo.png" alt="The Texas Signal Media Foundation"></li>
+                        <li><img src="assets/images/UAF-Logo-Dark.webp" alt="Unlocking America's Future"></li>
+                        <li><img src="assets/images/unitedwaylogo.png" alt="United way for greater Austin"></li>
                     </ul>
                 </div>
             </div>
@@ -230,6 +241,7 @@
       <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/custom.js" ></script>
 
 </body>

@@ -20,6 +20,45 @@ jQuery(document).ready(function() {
         $("#collapsibleNavbar").removeClass("show");
         $("#collapsibleNavbar").slideUp();
     });
+
+    $('.logo__slider').slick({
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed:5000,
+        arrows: false,
+        swipe: false,
+        slidesToShow: 6,
+        cssEase: 'linear',
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 5,
+              }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                  slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 3,
+                }
+            }
+        ]
+    });
+
 });
 $('#btn-back-to-top').click(function () {
     $('body,html').animate({
