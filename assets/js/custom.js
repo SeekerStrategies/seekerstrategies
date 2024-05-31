@@ -48,12 +48,14 @@ jQuery(document).ready(function() {
                 breakpoint: 800,
                 settings: {
                   slidesToShow: 3,
+                  speed:3000
                 }
             },
             {
                 breakpoint: 600,
                 settings: {
                   slidesToShow: 2,
+                  speed:3000
                 }
             }
         ]
