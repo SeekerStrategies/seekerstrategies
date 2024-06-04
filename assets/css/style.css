@@ -325,7 +325,16 @@ body.overflow::before{
     align-items: center;
 }
 .partners-logos ul li {
-    padding: 0px 55px;
+    padding: 20px 70px;
+    width: calc(25% - 15px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.partners-logos .logo__slider {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .partners-logos {
     padding: 20px 0;
@@ -372,7 +381,7 @@ body.overflow::before{
         margin-top: -100px;
     }
     .partners-logos ul li {
-        padding: 0px 45px;
+        padding: 20px 55px;
     }
 }
 @media only screen and (max-width: 991px){
@@ -383,6 +392,9 @@ body.overflow::before{
     }
     .team__inner .row > .col-lg-4 {
         margin-top: 60px;
+    }
+    .partners-logos ul li {
+        padding: 15px 30px;
     }
 }
 @media only screen and (max-width: 768px){
@@ -451,6 +463,10 @@ body.overflow::before{
     .team {
         margin-top: 0;
     }
+    .partners-logos ul li {
+        width: calc(33.333% - 15px);
+        padding: 15px 40px;
+    }
 }
 @media only screen and (max-width: 600px){
     .about-detail h1{
@@ -461,6 +477,7 @@ body.overflow::before{
         padding:10px 0;
     }
     .partners-logos ul li {
-        padding: 0px 40px;
+        padding: 15px 40px;
+        width: calc(50% - 10px);
     }
 }
