@@ -2,7 +2,7 @@
     max-width: 1080px;
     margin: 0 auto;
 }
-h1, h2, h3, h4, h5, h6, p, a, li, time{
+h1, h2, h3, h4, h5, h6, p, a, li, time, .contact-form-wrapper{
     font-family: 'Petrona', serif;
 }
 img {
@@ -372,6 +372,25 @@ body.overflow::before{
 .contact__content a:hover{
     color: #002b00 !important;
 }
+.contact-form-wrapper {
+    max-width: 868px !important;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.form-label span {
+    color: oklch(.637 .237 25.331);
+}
+.btn-primary {
+    background: #012b00 !important;
+    border-color: #012b00 !important;
+}
+.btn-primary:hover {
+    background: #01a45b !important;
+    border-color: #01a45b !important;
+}
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    box-shadow: 0 0 0 .25rem rgb(1 164 91 / 50%) !important;
+}
 @media only screen and (max-width: 1180px){
     .container{
         max-width: 90% !important;
@@ -446,6 +465,9 @@ body.overflow::before{
     }
     .contact p{
         max-width: 80%;
+    }
+    .contact-form-wrapper {
+        padding-top: 30px;
     }
 }
 @media only screen and (max-width:767px) {

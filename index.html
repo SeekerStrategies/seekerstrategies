@@ -189,7 +189,7 @@
             </div>
           </div>
       </section>
-      <section class="partners" id="partners">
+      <!-- <section class="partners" id="partners">
         <div class="container">
             <div class="row">
                 <div class="partners-heading text-center">
@@ -220,6 +220,52 @@
                         <li><img src="assets/images/UAF-Logo-Dark.webp" alt="Unlocking America's Future"></li>
                         <li><img src="assets/images/unitedwaylogo.png" alt="United way for greater Austin"></li>
                     </ul>
+                </div>
+            </div>
+        </div>
+      </section> -->
+      <section class="partners" id="partners">
+        <div class="container">
+            <div class="row">
+                <div class="partners-heading text-center">
+                    <h2>Contact Us</h2>
+                </div>
+                <div class="contact-form-wrapper">
+                    <!-- modify this form HTML and place wherever you want your form -->
+                    <form
+                    action="https://formspree.io/f/mgvoygze"
+                    method="POST"
+                    >
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name <span>*</span></label>
+                            <input id="name" class="form-control" type="text" name="name" placeholder="Who are you?" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email <span>*</span></label>
+                            <input id="email" class="form-control" type="email" name="email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="organization" class="form-label">Organization Name</label>
+                            <input id="organization" class="form-control" type="text" name="organization" placeholder="Your company or organization">
+                        </div>
+                        <div class="mb-3">
+                            <label for="reason" class="form-label">Contact Reason <span>*</span></label>
+                            <select id="reason" class="form-select" name="reason" required>
+                                <option value="" selected>Select a reason</option>
+                                <option value="discuss-potential-project">Discuss a potential project</option>
+                                <option value="media-inquiry">Media inquiry</option>
+                                <option value="public-speaking">Public speaking</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message <span>*</span></label>
+                            <textarea id="message" name="message" class="form-control" rows="8" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <div class="d-grid mb-3">
+                            <button class="btn btn-lg btn-primary" type="submit">Submit</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
