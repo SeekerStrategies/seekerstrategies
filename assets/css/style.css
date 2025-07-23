@@ -79,7 +79,7 @@ nav ul li.nav-item a.nav-link{
 }
 .banner{
     background-position: top center;
-    background-image: url(../images/seekerhero-min.jpg);
+    background-image: url(../images/hero-banner-2025.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 80px 0;
@@ -402,6 +402,9 @@ body.overflow::before{
     .partners-logos ul li {
         padding: 20px 55px;
     }
+    .banner {
+        height: 70vh;
+    }
 }
 @media only screen and (max-width: 991px){
     .image-icon img{
@@ -473,12 +476,12 @@ body.overflow::before{
 @media only screen and (max-width:767px) {
     .banner{
         background-position: top center;
-        background-image: url(../images/seekerheromobile-min.jpg);
+        background-image: url(../images/hero-mobile-banner-2025.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         padding: 80px 0;
         height: auto;
-        min-height: 690px;
+        min-height: 500px;
     }
     .team__inner .row > .col-lg-4 {
         margin-top: 30px;
@@ -504,6 +507,6 @@ body.overflow::before{
         width: calc(50% - 10px);
     }
     .banner{
-        min-height: 390px;
+        min-height: 300px;
     }
 }
