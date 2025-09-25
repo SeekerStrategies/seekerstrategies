@@ -1,3 +1,16 @@
+//1. Disable right-click
+document.addEventListener("contextmenu", function(e){
+    e.preventDefault();
+});
+
+//isable keyboard shortcuts like Ctrl+U (View Source), Ctrl+Shift+I (Inspect)
+document.onkeydown = function(e) {
+    if (e.ctrlKey && (e.key === 'u' || e.key === 'U' || e.key === 's' || e.key === 'S' || e.key === 'i' || e.key === 'I')) {
+      e.preventDefault();
+    }
+};
+
+//Scroll to the top
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
     var banner = $('.banner').height();
@@ -9,6 +22,8 @@ $(window).scroll(function() {
         $('#btn-back-to-top').fadeOut();
     }
 });
+
+//Mobile menu
 jQuery(document).ready(function() {
     $(".navbar-toggler").click(function(){
         $("body").addClass("overflow");
@@ -62,6 +77,8 @@ jQuery(document).ready(function() {
     // });
 
 });
+
+//animation of back to top button
 $('#btn-back-to-top').click(function () {
     $('body,html').animate({
         scrollTop: 0
